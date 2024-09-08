@@ -13,7 +13,7 @@
 }
 
 header {
-    background-color: var(--cor-principal);
+    background: linear-gradient(to bottom, #000, #00000032);
 }
 
 body * {
