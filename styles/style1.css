@@ -18,11 +18,16 @@
 .btn-container h1 {
     
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .btn-container button {
-    margin-left: 50px;
     width: 160px;
-    height: 0px;
+    height: 40px;
+}
 
+.butoon {
+    background-color: #3FE1D1;
+    outline: none;
+    border: none;
+    border-radius: 5px;
 }
