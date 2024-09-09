@@ -14,22 +14,28 @@
 </head>
 
 <body>
-    <header class="d-flex justify-content-between container-fluid align-items-center p-2">
-        <div class="navbar-brand w-25">
-            <a href="#"><img src="images/logo.png" alt="logo" width="200px" height="80px"></a>
-        </div>
-        <div class="nav justify-content-center w-50 fs-4 fw-bold">
-            <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Ínicio</a>
-            <a class="nav-link px-2 link-body-emphasis" href="#">Animes</a>
-            <a class="nav-link px-2 link-body-emphasis" href="#">Séries</a>
-            <a class="nav-link px-2 link-body-emphasis" href="#">Filmes</a>
-            <a class="nav-link px-2 link-body-emphasis border-start border-white border-2 ms-2" id="header-loja"
-                href="#">Loja</a>
-        </div>
-        <div class="d-flex justify-content-evenly w-25">
-            <a href="#" class="link-body-emphasis"><i class="bi bi-search fs-2"></i></a>
-            <a href="#" class="link-body-emphasis"><i class="bi bi-bookmark fs-2"></i></a>
-            <a href="#" class="link-body-emphasis"><i class="bi bi-person-circle fs-2"></i></a>
+    <header class="navbar navbar-expand-md">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="./index.html#"><img src="images/logo.png" alt="logo" width="160px"
+                    height="60px"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="collapse navbar-nav navbar-collapse flex-row justify-content-center h3 fw-bold" id="main-nav">
+                <li class="nav-item"><a class="nav-link px-2" aria-current="page" href="./index.html#">Ínicio</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#animes">Animes</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#series">Séries</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#filmes">Filmes</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#">Loja</a></li>
+            </ul>
+
+            <div class="justify-content-between d-none d-md-block">
+                <a href="#" class="link-light"><i class="bi bi-bookmark h1 px-2"></i></a>
+                <a href="#" class="link-light"><i class="bi bi-person-circle h1 px-2"></i></a>
+            </div>
         </div>
     </header>
 
@@ -72,7 +78,7 @@
 
         <div class="container mt-4">
             <!-- Animes do Momento -->
-            <h2>Animes do momento</h2>
+            <h2 id="animes">Animes do momento</h2>
             <div class="row mb-4">
                 <div class="col-md-4 mb-3">
                     <div class="card text-bg-dark">
@@ -106,7 +112,7 @@
                 </div>
             </div>
             <!-- Séries do Momento -->
-            <h2>Séries do momento</h2>
+            <h2 id="series">Séries do momento</h2>
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <div class="card">
@@ -139,7 +145,8 @@
                     </div>
                 </div>
             </div>
-            <h2>Filmes do momento</h2>
+            <!-- Filmes do momento -->
+            <h2 id="filmes">Filmes do momento</h2>
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <div class="card">
