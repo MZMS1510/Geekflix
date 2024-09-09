@@ -16,18 +16,6 @@ header {
     background: linear-gradient(to bottom, #000, #00000032);
 }
 
-header .nav .nav-link {
-    /* border-radius: 10px; */
-    transition: 0.3s all ease-in-out;
-    text-underline-offset: 50px;
-}
-
-header .nav .nav-link:hover {
-    background-color: var(--cor-principal);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
 #header-loja:hover {
     background-color: #3FE1D1;
 }
