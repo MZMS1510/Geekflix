@@ -16,20 +16,28 @@
 <body>
     <header class="navbar navbar-expand-md">
         <div class="container-xxl">
-            <a class="navbar-brand" href="./index.html#"><img src="images/logo.png" alt="logo" width="160px"
-                    height="60px"></a>
+            <a class="navbar-brand" href="./index.html#"><img src="images/logo.png" alt="logo" width="200px"
+                    height="80px"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <ul class="collapse navbar-nav navbar-collapse flex-row justify-content-center h3 fw-bold" id="main-nav">
-                <li class="nav-item"><a class="nav-link px-2" aria-current="page" href="./index.html#">Ínicio</a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="#animes">Animes</a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="#series">Séries</a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="#filmes">Filmes</a></li>
+            <ul class="collapse navbar-nav navbar-collapse flex-row justify-content-center fs-3 fw-bold" id="main-nav">
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" aria-current="page"
+                        href="./index.html#">Ínicio</a></li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#animes">Animes</a>
+                </li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#series">Séries</a>
+                </li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#filmes">Filmes</a>
+                </li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="./index.html#animes">Assistir</a>
+                </li>
                 <li class="nav-item"><a class="nav-link px-2" href="#">Loja</a></li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="#">Conta</a></li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="#">Lista</a></li>
             </ul>
 
             <div class="justify-content-between d-none d-md-block">
@@ -179,41 +187,45 @@
                     </div>
                 </div>
             </div>
-                
         </div>
     </main>
 
-    <footer class="w-100 pt-lg-5 ">
-        <div class="d-flex justify-content-around lh-lg">
-            <div>
-                <h4>Conta</h4>
-                <a href="#" class="nav-link link-body-emphasis">Minha Lista</a>
-                <a href="#" class="nav-link link-body-emphasis">Meu Perfil</a>
-                <a href="#" class="nav-link link-body-emphasis">Preferências</a>
-                <a href="#" class="nav-link link-body-emphasis">Sair</a>
-            </div>
-            <div>
-                <h4>Navegação</h4>
-                <a href="#" class="nav-link link-body-emphasis">Séries Populares</a>
-                <a href="#" class="nav-link link-body-emphasis">Animes Populares</a>
-                <a href="#" class="nav-link link-body-emphasis">Filmes Populares</a>
-                <a href="#" class="nav-link link-body-emphasis">Loja</a>
-            </div>
-            <div class="">
-                <h4>Contato</h4>
-                <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-instagram fs-4 me-1"></i> @geekflix</a>
-                <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-facebook fs-4 me-1"></i> @geekflix</a>
-                <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-linkedin fs-4 me-1"></i> @geekflix</a>
-            </div>
-            <div>
-                <h4>Geekflix</h4>
-                <a href="#" class="nav-link link-body-emphasis">Sobre</a>
-                <a href="#" class="nav-link link-body-emphasis">Ajuda</a>
-                <a href="#" class="nav-link link-body-emphasis">Termos de Uso</a>
-                <a href="#" class="nav-link link-body-emphasis">Política de Privacidade</a>
+    <footer class="pt-5">
+        <div class="container-xxl">
+            <div class="row lh-lg">
+                <div class="col-3 d-none d-md-block">
+                    <h4>Conta</h4>
+                    <a href="#" class="nav-link link-body-emphasis">Minha Lista</a>
+                    <a href="#" class="nav-link link-body-emphasis">Meu Perfil</a>
+                    <a href="#" class="nav-link link-body-emphasis">Preferências</a>
+                    <a href="#" class="nav-link link-body-emphasis">Sair</a>
+                </div>
+                <div class="col-3 d-none d-md-block">
+                    <h4>Navegação</h4>
+                    <a href="#" class="nav-link link-body-emphasis">Séries Populares</a>
+                    <a href="#" class="nav-link link-body-emphasis">Animes Populares</a>
+                    <a href="#" class="nav-link link-body-emphasis">Filmes Populares</a>
+                    <a href="#" class="nav-link link-body-emphasis">Loja</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Contato</h4>
+                    <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-instagram fs-4 me-1"></i>
+                        @geekflix</a>
+                    <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-facebook fs-4 me-1"></i>
+                        @geekflix</a>
+                    <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-linkedin fs-4 me-1"></i>
+                        @geekflix</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Geekflix</h4>
+                    <a href="#" class="nav-link link-body-emphasis">Sobre</a>
+                    <a href="#" class="nav-link link-body-emphasis">Ajuda</a>
+                    <a href="#" class="nav-link link-body-emphasis">Termos de Uso</a>
+                    <a href="#" class="nav-link link-body-emphasis">Política de Privacidade</a>
+                </div>
             </div>
         </div>
-        <hr class="mt-5 mb-5 w-75 m-auto border border-2 border-white opacity-100">
+        <hr class="my-5 w-75 m-auto border border-2 border-white opacity-100">
         <p class="w-100 text-center pb-5 m-0">&copy;2024 Geekflix. Todos os direitos reservados.</p>
     </footer>
 
