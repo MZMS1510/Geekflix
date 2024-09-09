@@ -31,7 +31,7 @@
     border-radius: 5px;
 }
 .carousel {
-    height: 85vh; 
+    height: 85vh;
     overflow: hidden;
 }
 
@@ -43,3 +43,24 @@
 }
 
 
+/* Estilo dos cards */
+
+.card-img-top {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    opacity: 40%;
+}
+.card {
+    overflow: hidden;
+}
+.card-img-overlay {
+    cursor: pointer;
+}
+p {
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
