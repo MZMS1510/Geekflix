@@ -27,3 +27,7 @@ body * {
 footer {
     background-image: linear-gradient(to top, #0F5A53 0.52%, #1A1A1A 30.96%);
 }
+
+.fundo-laranja {
+    background-color: var(--cor-principal);
+}
