@@ -331,7 +331,15 @@
             document.getElementById("search-button").addEventListener("click", function() {
                 var pesquisa = document.getElementById("search-input").value;
                 if (pesquisa) {
-                    window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(pesquisa)}`;
+                    var url;
+                    if (pesquisa.includes("senhor dos aneis")) {
+                        url = `https://mzms1510.github.io/Geekflix/descricao-filme-senhor-aneis.html?query=${encodeURIComponent(pesquisa)}`;
+                    } else if (pesquisa.includes("Série")) {
+                        url = `https://mzms1510.github.io/Geekflix/minhalista.html?query=${encodeURIComponent(pesquisa)}`;
+                    } else {
+                        url = `https://mzms1510.github.io/Geekflix/padrao.html?query=${encodeURIComponent(pesquisa)}`;
+                    }
+                    window.location.href = url;
                 } else {
                     alert("Por favor, insira um termo de pesquisa.");
                 }
