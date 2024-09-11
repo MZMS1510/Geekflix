@@ -2,6 +2,7 @@
     position: relative;
     text-align: center;
 }
+
 .btn-centralizado {
     position: absolute;
     top: 100%;
@@ -9,16 +10,19 @@
     transform: translate(-50%, -50%);
     z-index: 10;
 }
+
 .btn-container {
     position: absolute;
     top: 40%;
     left: 20%;
     z-index: 10;
 }
+
 .btn-container h1 {
     color: #fff;
     margin-bottom: 20px;
 }
+
 .btn-container button {
     width: 160px;
     height: 40px;
@@ -30,6 +34,7 @@
     border: none;
     border-radius: 5px;
 }
+
 .carousel {
     height: 85vh;
     overflow: hidden;
@@ -49,18 +54,120 @@
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .card:hover .card-img-top {
     transform: scale(1.1);
     opacity: 40%;
 }
+
 .card {
     overflow: hidden;
 }
+
 .card-img-overlay {
     cursor: pointer;
 }
+
 p {
     font-size: 1.2em;
     font-weight: 600;
-    
+
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.539), rgba(255, 255, 255, 0));
+    transition: opacity 0.5s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    opacity: 0;
+    /* Inicialmente escondido */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Suaviza a transição de opacidade e posição */
+    position: absolute;
+    bottom: 10px;
+    /* Posiciona na parte inferior do card */
+    left: 50%;
+    transform: translate(-50%, 20px);
+    /* Inicialmente posicionado abaixo do card */
+}
+
+.card:hover .info {
+    opacity: 1;
+    /* Mostra as informações ao passar o mouse */
+    transform: translate(-50%, 0);
+    /* Desliza as informações para cima */
+}
+
+.alinhar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alinhar p {
+    margin: 0px 30px;
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    /* Cor do texto */
+    z-index: 10;
+    /* Mantém o texto e o botão acima da imagem */
+}
+
+.btn-custom {
+    background-color: #e50914;
+    /* Cor de destaque (vermelho Netflix) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #f40612;
+    /* Cor de hover */
+    transform: scale(1.05);
+    /* Leve efeito de crescimento */
+}
+
+.btn-custom i {
+    margin-right: 8px;
+    /* Espaçamento entre o ícone e o texto */
 }
