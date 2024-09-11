@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekflix</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-md">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="./index.html#"><img src="images/logo.png" alt="logo" width="200px"
+                    height="80px"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="collapse navbar-nav navbar-collapse flex-row justify-content-center fs-3 fw-bold" id="main-nav">
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" aria-current="page"
+                        href="./index.html#">Ínicio</a></li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#animes">Animes</a>
+                </li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#series">Séries</a>
+                </li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#filmes">Filmes</a>
+                </li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="./index.html#animes">Assistir</a>
+                </li>
+                <li class="nav-item"><a class="nav-link px-2" href="#">Loja</a></li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="#">Conta</a></li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="#">Lista</a></li>
+            </ul>
+
+            <div class="justify-content-between d-none d-md-block">
+                <a href="#" class="link-light"><i class="bi bi-bookmark h1 px-2"></i></a>
+                <a href="#" class="link-light"><i class="bi bi-person-circle h1 px-2"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-sm">
+        <div class="row mt-5 justify-content-center">
+            <img class="col-10" src="images/Kaiju No 8.jpg" alt="naruto shippuden">
+        </div>
+        <div class="row mt-2 justify-content-center text-center">
+            <div class="col-2 me-5">
+                <p>25/05/2025</p>
+            </div>
+            <div class="col-2 me-5">
+                <p>2h</p>
+            </div>
+            <div class="col-2">
+                <p class="bg-warning" style="max-width: 40px;">14</p>
+            </div>
+            <div class="col-3">
+                <p>Ação • Aventura</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-between mt-4">
+            <div class="col-3 d-flex gap-3 justify-content-around">
+                <div class="fundo-laranja btn rounded-circle fs-2 bi bi-hand-thumbs-up" id="like-button"
+                    onclick="toggleLike()">
+                </div>
+                <div class="fundo-laranja btn rounded-circle fs-2 bi bi-hand-thumbs-down" id="dislike-button"
+                    onclick="toggleDislike()">
+                </div>
+                <div class="fundo-laranja btn rounded-circle fs-2 bi bi-share" onclick="share()">
+                </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-4 d-flex justify-content-around">
+                <a href="#" class="btn rounded text-light fundo-laranja fs-4 align-content-center px-sm-5">Loja</a>
+                <a href="#" class="btn rounded text-light fundo-laranja fs-4 align-content-center px-sm-4">Assistir</a>
+            </div>
+        </div>
+
+        <div class="row navbar mt-5">
+            <div class="nav h3 justify-content-center">
+                <a href="#sinopse" class="nav-item nav-link link-body-emphasis d-none d-md-block">Sinopse</a>
+                <a href="#elenco" class="nav-item nav-link link-body-emphasis">Elenco</a>
+                <a href="#trailers" class="nav-item nav-link link-body-emphasis">Trailers</a>
+                <a href="#avaliacoes" class="nav-item nav-link link-body-emphasis">Avaliações</a>
+            </div>
+        </div>
+
+        <hr id="sinopse" class="border-2">
+
+        <section class="row my-5">
+            <h4>Sinopse:</h4>
+            <p class="col-8 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, laboriosam
+                veritatis
+                quasi ullam
+                neque maiores expedita non, deserunt suscipit porro placeat temporibus eius provident nam repellat
+                officia magnam? Eveniet, doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+                recusandae minus magni atque voluptatem cumque, quam sapiente, deserunt ad quae ducimus, aliquam
+                veritatis inventore maxime non ab dolorem temporibus odio!</p>
+        </section>
+
+        <hr id="elenco" class="border-2">
+
+        <section class="row my-5">
+            <ul class="list-group list-group-flush">
+                <li class="d-flex align-items-center list-group-item">
+                    <span class="text-center me-2 w-25">
+                        <img class="rounded-circle" src="./images/placeholder.webp"
+                            alt="pessoa de pele clara e cabelo castanho" width="120px">
+                        <h5>Nome da pessoa</h5>
+                    </span>
+                    <span class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas
+                        tempore,
+                        doloremque nostrum non ratione odit distinctio magnam illo quidem id necessitatibus quaerat sunt
+                        vitae voluptatibus cumque? Neque, iste.</span>
+                </li>
+
+                <li class="d-flex align-items-center list-group-item">
+                    <span class="text-center me-2 w-25">
+                        <img class="rounded-circle" src="./images/placeholder.webp"
+                            alt="pessoa de pele clara e cabelo castanho" width="120px">
+                        <h5>Nome da pessoa</h5>
+                    </span>
+                    <span class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas
+                        tempore,
+                        doloremque nostrum non ratione odit distinctio magnam illo quidem id necessitatibus quaerat sunt
+                        vitae voluptatibus cumque? Neque, iste.</span>
+                </li>
+
+                <li class="d-flex align-items-center list-group-item">
+                    <span class="text-center me-2 w-25">
+                        <img class="rounded-circle" src="./images/placeholder.webp"
+                            alt="pessoa de pele clara e cabelo castanho" width="120px">
+                        <h5>Nome da pessoa</h5>
+                    </span>
+                    <span class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore modi voluptas
+                        tempore,
+                        doloremque nostrum non ratione odit distinctio magnam illo quidem id necessitatibus quaerat sunt
+                        vitae voluptatibus cumque? Neque, iste.</span>
+                </li>
+            </ul>
+        </section>
+
+        <hr id="trailers" class="border-2">
+
+        <section class="row my-5">
+            <iframe class="col-10 m-auto" style="height: 60vh;"
+                src="https://www.youtube.com/embed/JwF7bhvnCxI?si=KQEXJ-jZkOXCjdRq" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <hr id="avaliacoes" class="border-2">
+
+        <section class="row my-5">
+            <h2 class="display-3 mb-5">Avaliações</h2>
+
+            <ul class="list-unstyled ms-5 list-group list-group-flush">
+                <li class="my-2 list-group-item">
+                    <img class="rounded-circle float-start me-5" src="./images/placeholder.webp"
+                        alt="pessoa de pele clara e cabelo castanho" width="120px">
+                    <h5>Wilson</h5>
+                    <div class="d-flex align-items-center pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <small class="ms-2">01/01/2001</small>
+                    </div>
+                    <span class="lead">Que anime lindo, adorei!</span>
+                    <ul class="list-unstyled mt-4">
+                        <li>
+                            <img class="rounded-circle float-start me-5" src="./images/placeholder.webp"
+                                alt="pessoa de pele clara e cabelo castanho" width="120px">
+                            <h5>Wilson</h5>
+                            <div class="d-flex align-items-center pb-2">
+                                <small class="ms-2">01/01/2001</small>
+                            </div>
+                            <span class="lead">Eu também!</span>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="my-2 list-group-item" style="max-width: 70%;">
+                    <img class="rounded-circle float-start me-5" src="./images/placeholder.webp"
+                        alt="pessoa de pele clara e cabelo castanho" width="120px">
+                    <h5>Wilfred</h5>
+                    <div class="d-flex align-items-center pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <small class="ms-2">02/01/2001</small>
+                    </div>
+                    <span class="lead">Que anime horrível, odiei!</span>
+                </li>
+
+                <li class="my-2 list-group-item" style="max-width: 70%;">
+                    <img class="rounded-circle float-start me-5" src="./images/placeholder.webp"
+                        alt="pessoa de pele clara e cabelo castanho" width="120px">
+                    <h5>Wilma</h5>
+                    <div class="d-flex align-items-center pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <small class="ms-2">30/02/2032</small>
+                    </div>
+                    <span class="lead">Sim</span>
+                </li>
+            </ul>
+        </section>
+
+        <hr id="avaliar" class="border-2">
+
+        <section>
+            <h2 class="display-3 mb-5 fw-bold">Avalie</h2>
+
+            <form>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn fs-4 bi bi-star star" onclick="selectRating(1)"></button>
+                    <button type="button" class="btn fs-4 bi bi-star star" onclick="selectRating(2)"></button>
+                    <button type="button" class="btn fs-4 bi bi-star star" onclick="selectRating(3)"></button>
+                    <button type="button" class="btn fs-4 bi bi-star star" onclick="selectRating(4)"></button>
+                    <button type="button" class="btn fs-4 bi bi-star star" onclick="selectRating(5)"></button>
+                </div>
+                <div class="form-floating mb-4 mt-5">
+                    <textarea id="comment" class="form-control fs-5" style="height: 140px;"></textarea>
+                    <label for="comment" class="form-label">Seu comentário...</label>
+                </div>
+
+                <label for="email" class="form-label">Endereço de email:</label>
+                <div class="mb-4 input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" class="form-control py-3 fs-5" id="email" placeholder="ex. luigi@exemplo.com">
+                </div>
+
+                <label for="nome" class="form-label">Nome:</label>
+                <div class="mb-4 input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control py-3 fs-5" id="nome" placeholder="ex. Luigi">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pt-5">
+        <div class="container-xxl">
+            <div class="row lh-lg">
+                <div class="col-3 d-none d-md-block">
+                    <h4>Conta</h4>
+                    <a href="#" class="nav-link link-body-emphasis">Minha Lista</a>
+                    <a href="#" class="nav-link link-body-emphasis">Meu Perfil</a>
+                    <a href="#" class="nav-link link-body-emphasis">Preferências</a>
+                    <a href="#" class="nav-link link-body-emphasis">Sair</a>
+                </div>
+                <div class="col-3 d-none d-md-block">
+                    <h4>Navegação</h4>
+                    <a href="#" class="nav-link link-body-emphasis">Séries Populares</a>
+                    <a href="#" class="nav-link link-body-emphasis">Animes Populares</a>
+                    <a href="#" class="nav-link link-body-emphasis">Filmes Populares</a>
+                    <a href="#" class="nav-link link-body-emphasis">Loja</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Contato</h4>
+                    <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-instagram fs-4 me-1"></i>
+                        @geekflix</a>
+                    <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-facebook fs-4 me-1"></i>
+                        @geekflix</a>
+                    <a href="#" class="nav-link link-body-emphasis"><i class="bi bi-linkedin fs-4 me-1"></i>
+                        @geekflix</a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Geekflix</h4>
+                    <a href="#" class="nav-link link-body-emphasis">Sobre</a>
+                    <a href="#" class="nav-link link-body-emphasis">Ajuda</a>
+                    <a href="#" class="nav-link link-body-emphasis">Termos de Uso</a>
+                    <a href="#" class="nav-link link-body-emphasis">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 w-75 m-auto border border-2 border-white opacity-100">
+        <p class="w-100 text-center pb-5 m-0">&copy;2024 Geekflix. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let liked = false;
+        let disliked = false;
+        const likeButton = document.querySelector("#like-button")
+        const dislikeButton = document.querySelector("#dislike-button")
+
+        function selectRating(rating) {
+            const stars = document.querySelectorAll(".star");
+
+            for (let i = 0; i < 5; i++) {
+                stars[i].className = "btn fs-4 bi bi-star star";
+            }
+
+            for (let i = 0; i < rating; i++) {
+                stars[i].classList.toggle("bi-star-fill");
+                stars[i].classList.toggle("bi-star");
+            }
+        }
+
+        function toggleLike() {
+            likeButton.classList.toggle("bi-hand-thumbs-up");
+            likeButton.classList.toggle("bi-hand-thumbs-up-fill");
+            liked = !liked;
+
+            if (disliked) {
+                dislikeButton.classList.toggle("bi-hand-thumbs-down");
+                dislikeButton.classList.toggle("bi-hand-thumbs-down-fill");
+                disliked = !disliked;
+            }
+        }
+
+        function toggleDislike() {
+            dislikeButton.classList.toggle("bi-hand-thumbs-down");
+            dislikeButton.classList.toggle("bi-hand-thumbs-down-fill");
+
+            disliked = !disliked;
+
+            if (liked) {
+                likeButton.classList.toggle("bi-hand-thumbs-up");
+                likeButton.classList.toggle("bi-hand-thumbs-up-fill");
+                liked = !liked;
+            }
+        }
+    </script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

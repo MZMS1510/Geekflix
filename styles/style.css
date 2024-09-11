@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Urbanist;
+    src: url(../fonts/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Silkscreen;
+    src: url(../fonts/Silkscreen-Regular.ttf);
+}
+
+:root {
+    --cor-principal: #F55800;
+}
+
+header {
+    background: linear-gradient(to bottom, #000, #00000032);
+}
+
+#header-loja:hover {
+    background-color: #3FE1D1;
+}
+
+body * {
+    font-family: Urbanist;
+}
+
+footer {
+    background-image: linear-gradient(to top, #0F5A53 0.52%, #1A1A1A 30.96%);
+}
+
+.fundo-laranja {
+    background-color: var(--cor-principal);
+}

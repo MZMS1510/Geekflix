@@ -1,0 +1,66 @@
+.carousel-item {
+    position: relative;
+    text-align: center;
+}
+.btn-centralizado {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.btn-container {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 10;
+}
+.btn-container h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn-container button {
+    width: 160px;
+    height: 40px;
+}
+
+.butoon {
+    background-color: #3FE1D1;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.carousel {
+    height: 85vh;
+    overflow: hidden;
+}
+
+.carousel-item video,
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Estilo dos cards */
+
+.card-img-top {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    opacity: 40%;
+}
+.card {
+    overflow: hidden;
+}
+.card-img-overlay {
+    cursor: pointer;
+}
+p {
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
