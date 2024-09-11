@@ -13,7 +13,8 @@
 }
 
 header {
-    background: linear-gradient(to bottom, #000, #00000032);
+    background: linear-gradient(to bottom, #000, #00000000);
+    /* background-color: var(--cor-principal); */
 }
 
 #header-loja:hover {
