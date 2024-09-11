@@ -49,8 +49,8 @@
 
     <main>
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="Buscar...">
-            <button class="search-button">
+            <input type="text" class="search-input" id="search-input" placeholder="Buscar...">
+            <button class="search-button" id="search-button">
                 <i class="bi bi-search"></i>
             </button>
         </div>
@@ -243,21 +243,23 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="images/Senhor dos Aneis.jpg" class="card-img-top" alt="Filme">
-                        <div class="overlay">
-                            <div class="text p-2">
-                                <h3>O Senhor dos Anéis: A sociedade do anel</h3>
-                                <div class="info">
-                                    <div class="alinhar">
-                                        <p>1997</p>
-                                        <p>24min/Ep</p>
-                                        <p>7.5⭐</p>
+                    <a href="descricao-filme-senhor-aneis.html">
+                        <div class="card">
+                            <img src="images/Senhor dos Aneis.jpg" class="card-img-top" alt="Filme">
+                            <div class="overlay">
+                                <div class="text p-2">
+                                    <h3>O Senhor dos Anéis: A sociedade do anel</h3>
+                                    <div class="info">
+                                        <div class="alinhar">
+                                            <p>1997</p>
+                                            <p>24min/Ep</p>
+                                            <p>7.5⭐</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
@@ -324,6 +326,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script>
+            document.getElementById("search-button").addEventListener("click", function() {
+                var pesquisa = document.getElementById("search-input").value;
+                if (pesquisa) {
+                    window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(pesquisa)}`;
+                } else {
+                    alert("Por favor, insira um termo de pesquisa.");
+                }
+            });
+        </script>
 </body>
 
 </html>

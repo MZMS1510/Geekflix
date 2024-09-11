@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Urbanist;
+    src: url(../fonts/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Silkscreen;
+    src: url(../fonts/Silkscreen-Regular.ttf);
+}
+
+:root {
+    --cor-principal: #F55800;
+}
+
+header {
+    background: #060D17;
+    /* background-color: var(--cor-principal); */
+}
+
+#header-loja:hover {
+    background-color: #3FE1D1;
+}
+
+body * {
+    font-family: Urbanist;
+}
+
+footer {
+    background-image: linear-gradient(to top, #060D17 0.52%, #1A1A1A 30.96%);
+}
+
+.fundo-laranja {
+    background-color: var(--cor-principal);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    /* Ajuste o tamanho da barra de busca */
+    margin: auto;
+    border-radius: 100px;
+    /* Bordas arredondadas */
+    overflow: hidden;
+    /* Sombra para dar destaque */
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #212529;
+}
+
+.search-button {
+    background-color: #20C997;
+    color: #000;
+    border: none;
+    padding: 9px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-button i {
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #489795;
+}
+.bg-dark-custom {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-custom {
+    background-color: #20c997;
+    color: #fff;
+}
+
+.card-custom {
+    background-color: #444;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.voltar {
+    margin-bottom: 20px;
+}
+.voltar a{
+    text-decoration: none;
+    color: #fff;
+}
+.voltar a:hover {
+    text-decoration: underline;
+}

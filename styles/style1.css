@@ -149,10 +149,7 @@ p {
     left: 10%;
     text-align: center;
     color: white;
-    /* Cor do texto */
     z-index: 10;
-    /* Mantém o texto e o botão acima da imagem */
-    /* Efeito de desfoque */
 }
 
 .carousel-caption-custom>.trans {
@@ -226,5 +223,4 @@ p {
 
 .search-button:hover {
     background-color: #f40612;
-    /* Cor de hover para o botão */
 }
