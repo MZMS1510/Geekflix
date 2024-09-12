@@ -1,4 +1,4 @@
-.camiseta_pokemon{
+.camiseta_pokemon {
     width: 150px;
     height: 150px;
     background-image: url(../imgcarrinho/camiseta-pokemon.jpg);
@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-.caneca_starwars{
+.caneca_starwars {
     width: 150px;
     height: 150px;
     background-image: url(../imgcarrinho/canecastarwars.webp);
@@ -14,19 +14,15 @@
     background-size: cover;
 }
 
-li{
+li {
     margin-left: 25px;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-.form-control::placeholder{
-    color: black;
-}
-
-.d-flex::placeholder{
+.d-flex::placeholder {
     color: black;
 }

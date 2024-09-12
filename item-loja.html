@@ -25,22 +25,40 @@
             </button>
 
             <ul class="collapse navbar-nav navbar-collapse flex-row justify-content-center fs-3 fw-bold" id="main-nav">
-                <div class="search-container">
-                    <input type="text" class="search-input" id="search-input" placeholder="Buscar...">
-                    <button class="search-button" id="search-button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" aria-current="page"
+                        href="./index.html#">Ínicio</a></li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#animes">Animes</a>
+                </li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#series">Séries</a>
+                </li>
+                <li class="nav-item d-md-block d-none"><a class="nav-link px-2" href="./index.html#filmes">Filmes</a>
+                </li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="./index.html#animes">Assistir</a>
+                </li>
+                <li class="nav-item"><a class="nav-link px-2" href="#">Loja</a></li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="#">Conta</a></li>
+                <li class="nav-item d-block d-md-none"><a class="nav-link px-2" href="#">Lista</a></li>
             </ul>
 
             <div class="justify-content-between d-none d-md-block">
-                <a href="./minhalista.html" class="link-light"><i class="bi bi-cart h1 px-2"></i></a>
+                <a href="./minhalista.html" class="link-light"><i class="bi bi-bookmark h1 px-2"></i></a>
                 <a href="#" class="link-light"><i class="bi bi-person-circle h1 px-2"></i></a>
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="container-lg">
+        <div class="d-flex w-75" style="margin-top: 10px;">
+            <form class="d-flex w-100" role="search">
+                <input class="form-control w-50" type="search" placeholder="Buscar..." aria-label="Pesquisar"
+                    style="border-radius: 20px 0px 0px 20px;  background-color: #33383d; color: white;">
+                <button class="btn fs-5" type="submit"
+                    style="border-radius: 0px 20px 20px 0px; background-color: #3FE1D1; color: black;"><i
+                        class="bi bi-search"></i></button>
+            </form>
+            <a href="#"><i class="bi bi-cart" style="color: #D9D9D9; font-size: 25px; margin-left: 50%;"></i></a>
+        </div>
+
         <div class="container my-4">
             <div class="voltar"><a href="#"><- Continuar comprando</a></div>
             <div class="row">
