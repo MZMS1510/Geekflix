@@ -107,3 +107,29 @@ footer {
 .voltar a:hover {
     text-decoration: underline;
 }
+.card-img-top {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    opacity: 40%;
+}
+
+.card {
+    overflow: hidden;
+}
+h4 {
+    font-weight: 500;
+    font-size: 2em;
+}
+p {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+h3 {
+    font-weight: 600;
+    
+}
