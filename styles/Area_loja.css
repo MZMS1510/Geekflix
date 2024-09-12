@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+header {
+  background: linear-gradient(to bottom, #000, #00000000);
+  /* background-color: var(--cor-principal); */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  /* Ajuste o tamanho da barra de busca */
+  margin: auto;
+  border-radius: 100px;
+  /* Bordas arredondadas */
+  overflow: hidden;
+  /* Sombra para dar destaque */
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #212529;
+  
+}
+
+.search-button {
+  background-color: #20C997;
+  color: #000;
+  border: none;
+  padding: 2px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.search-button i {
+  font-size: 26px;
+}
+
+
+.search-button:hover {
+  background-color: #489795;
+}
+
+
+
+/* Parte das camisetas */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 50px;
+}
+.container > div {
+  flex: 0 0 290px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > div:nth-of-type(1) {
+  background: url("https://tfcprw.vtexassets.com/arquivos/ids/175076-1200-auto?v=638557137884930000&width=1200&height=auto&aspect=true") no-repeat 50%/cover;
+}
+.container > div:hover:nth-of-type(1) {
+  background: url("https://tfcprw.vtexassets.com/arquivos/ids/175077-1200-auto?v=638557137956230000&width=1200&height=auto&aspect=true") no-repeat 50%/cover;
+}
+
+.container > div:nth-of-type(2) {
+  background: url("https://tfcprw.vtexassets.com/arquivos/ids/174150-1200-auto?v=638544165686170000&width=1200&height=auto&aspect=true") no-repeat 50%/cover;
+}
+.container > div:hover:nth-of-type(2) {
+  background: url("https://tfcprw.vtexassets.com/arquivos/ids/174152-1200-auto?v=638544165997200000&width=1200&height=auto&aspect=true") no-repeat 50%/cover;
+}
+
+
+.container > div:nth-of-type(3) {
+  background: url("https://tfcprw.vtexassets.com/arquivos/ids/175627-1200-auto?v=638599368177200000&width=1200&height=auto&aspect=true") no-repeat 50%/cover;
+}
+.container > div:hover:nth-of-type(3) {
+  background: url("https://tfcprw.vtexassets.com/arquivos/ids/175630-1200-auto?v=638599368721670000&width=1200&height=auto&aspect=true") no-repeat 50%/cover;
+}
+
+
+.container > div:nth-of-type(4) {
+  background: url("https://static.riachuelo.com.br/RCHLO/15042960001/portrait/f652d1618db59e3b165174825401219cdb39dd68.jpg?imwidth=600") no-repeat 50%/cover;
+}
+.container > div:hover:nth-of-type(4) {
+  background: url("https://static.riachuelo.com.br/RCHLO/15042960001/portrait/48a8fb1a933102b46953d2cdf5aa59ba374f865a.jpg?imwidth=600") no-repeat 50%/cover;
+}
+
+
+.container > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #02022e;
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+.container > div .content span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.8rem;
+}
+.container > div .content h2 {
+  font-size: 1.5rem;
+}
+.container > div:hover {
+  flex: 0 0 290px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translatey(-30px);
+}
+.container > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}
+/* fim */
+
+
+/* parte dos quadrinhos */
+.container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 50px;
+}
+.container2 > div {
+  flex: 0 0 290px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+.container2 > div:nth-of-type(1) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ckliqna55h4ar418cf11ava648/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container2 > div:hover:nth-of-type(1) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kp10egb2d93nfaqo095e52o64m/-S897-FWEBP") no-repeat 50%/cover;
+}
+
+
+.container2 > div:nth-of-type(2) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_aaei0cp8kt5dtal3ghlnn2j326/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container2 > div:hover:nth-of-type(2) {
+  background: url("https://panini.com.br/media/catalog/product/A/D/ADSAN001.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=897&width=960&canvas=960:897") no-repeat 50%/cover;
+}
+
+
+.container2 > div:nth-of-type(3) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_edns8chufd55bbpva5kott8m0a/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container2 > div:hover:nth-of-type(3) {
+  background: url("https://panini.com.br/media/catalog/product/A/B/ABCAV001.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=897&width=960&canvas=960:897") no-repeat 50%/cover;
+}
+
+
+.container2 > div:nth-of-type(4) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_9d9ns5r4gt6cp7ibhnef09jo61/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container2 > div:hover:nth-of-type(4) {
+  background: url("https://panini.com.br/media/catalog/product/A/P/APONT001.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=897&width=960&canvas=960:897") no-repeat 50%/cover;
+}
+
+
+.container2 > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #02022e;
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+.container2 > div .content span {
+  display: block;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+.container2 > div .content h2 {
+  font-size: 1.5rem;
+}
+.container2 > div:hover {
+  flex: 0 0 290px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translatey(-30px);
+}
+.container2 > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}
+
+/* fim */
+
+/* Parte dos mangas */
+.container3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 50px;
+}
+.container3 > div {
+  flex: 0 0 290px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container3 > div:nth-of-type(1) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_sop8a6gov55g918kkgl7amfq2c/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container3 > div:hover:nth-of-type(1) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_sop8a6gov55g918kkgl7amfq2c/-S897-FWEBP") no-repeat 50%/cover;
+}
+
+.container3 > div:nth-of-type(2) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_pbt3sbpchl381355m5cbsbhi18/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container3 > div:hover:nth-of-type(2) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_pbt3sbpchl381355m5cbsbhi18/-S897-FWEBP") no-repeat 50%/cover;
+}
+
+
+.container3 > div:nth-of-type(3) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_5ue1gfv3rp7ot78oejmav1mg3f/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container3 > div:hover:nth-of-type(3) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_5ue1gfv3rp7ot78oejmav1mg3f/-S897-FWEBP") no-repeat 50%/cover;
+}
+
+
+.container3 > div:nth-of-type(4) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_jc2noottjp00t6f410fp29is04/-S897-FWEBP") no-repeat 50%/cover;
+}
+.container3 > div:hover:nth-of-type(4) {
+  background: url("https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_jc2noottjp00t6f410fp29is04/-S897-FWEBP") no-repeat 50%/cover;
+}
+
+
+.container3 > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #02022e;
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+.container3 > div .content span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.8rem;
+}
+.container3 > div .content h2 {
+  font-size: 1.5rem;
+}
+.container3 > div:hover {
+  flex: 0 0 290px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translatey(-30px);
+}
+.container3 > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}
+/* fim */
+
+/* Parte dos acessorios */
+.container4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 50px;
+}
+.container4 > div {
+  flex: 0 0 290px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container4 > div:nth-of-type(1) {
+  background: url("https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/1/1/11-min_3_1.jpg") no-repeat 50%/cover;
+}
+.container4 > div:hover:nth-of-type(1) {
+  background: url("https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/1/1/11-min_3_1.jpg") no-repeat 50%/cover;
+}
+
+.container4 > div:nth-of-type(2) {
+  background: url("https://www.capsulashop.com.br/cdn/shop/products/ecobag-princesa-mononoke.jpg?v=1695774181&width=800") no-repeat 50%/cover;
+}
+.container4 > div:hover:nth-of-type(2) {
+  background: url("https://www.capsulashop.com.br/cdn/shop/products/ecobag-princesa-mononoke.jpg?v=1695774181&width=800") no-repeat 50%/cover;
+}
+
+
+.container4 > div:nth-of-type(3) {
+  background: url("https://static.riachuelo.com.br/RCHLO/15075370/portrait/9fc985f346481a80df4ea9ad00f3b2ce7efb3f71.jpg?imwidth=600") no-repeat 50%/cover;
+}
+.container4 > div:hover:nth-of-type(3) {
+  background: url("https://static.riachuelo.com.br/RCHLO/15075370/portrait/9fc985f346481a80df4ea9ad00f3b2ce7efb3f71.jpg?imwidth=600") no-repeat 50%/cover;
+}
+
+
+.container4 > div:nth-of-type(4) {
+  background: url("https://cdn-ssl.s7.shopdisney.com/is/image/DisneyShopping/2842056199057?fmt=webp&qlt=70&wid=2000&hei=2000") no-repeat 50%/cover;
+}
+.container4 > div:hover:nth-of-type(4) {
+  background: url("https://cdn-ssl.s7.shopdisney.com/is/image/DisneyShopping/2842056199057?fmt=webp&qlt=70&wid=2000&hei=2000") no-repeat 50%/cover;
+}
+
+
+.container4 > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #02022e;
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+.container4 > div .content span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.8rem;
+}
+.container4 > div .content h2 {
+  font-size: 1.5rem;
+}
+.container4 > div:hover {
+  flex: 0 0 290px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translatey(-30px);
+}
+.container4 > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}
+/* fim */
+
+
+/* Parte dos filmes */
+.container5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 50px;
+}
+.container5 > div {
+  flex: 0 0 290px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container5 > div:nth-of-type(1) {
+  background: url("https://br.web.img2.acsta.net/c_310_420/pictures/23/05/17/22/43/4869322.jpg") no-repeat 50%/cover;
+}
+.container5 > div:hover:nth-of-type(1) {
+  background: url("https://br.web.img2.acsta.net/c_310_420/pictures/23/05/17/22/43/4869322.jpg") no-repeat 50%/cover;
+}
+
+.container5 > div:nth-of-type(2) {
+  background: url("https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/62/20122008.jpg") no-repeat 50%/cover;
+}
+.container5 > div:hover:nth-of-type(2) {
+  background: url("https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/62/20122008.jpg") no-repeat 50%/cover;
+}
+
+
+.container5 > div:nth-of-type(3) {
+  background: url("https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/87/30/40/20028676.jpg") no-repeat 50%/cover;
+}
+.container5 > div:hover:nth-of-type(3) {
+  background: url("https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/87/30/40/20028676.jpg") no-repeat 50%/cover;
+}
+
+
+.container5 > div:nth-of-type(4) {
+  background: url("https://br.web.img2.acsta.net/c_310_420/pictures/19/04/26/17/30/2428965.jpg") no-repeat 50%/cover;
+}
+.container5 > div:hover:nth-of-type(4) {
+  background: url("https://br.web.img2.acsta.net/c_310_420/pictures/19/04/26/17/30/2428965.jpg") no-repeat 50%/cover;
+}
+
+
+.container5 > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #02022e;
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+.container5 > div .content span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.8rem;
+}
+.container5 > div .content h2 {
+  font-size: 1.5rem;
+}
+.container5 > div:hover {
+  flex: 0 0 290px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translatey(-30px);
+}
+.container5 > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}
+/* fim */
+
+footer {
+  background-image: linear-gradient(to top, #0F5A53 0.52%, #1A1A1A 30.96%);
+}
