@@ -53,10 +53,11 @@
         <div class="d-flex justify-content-start" style="width: 80%; margin-top: 10px;">
             <form class="d-flex" role="search">
                 <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search"
-                    style="border-radius: 0px;  background-color: #D9D9D9; color: black;">
+                    style="border-radius: 20px 0px 0px 20px;  background-color: #D9D9D9; color: black;">
                 <button class="btn btn-outline-success" type="submit"
-                    style="border-radius: 0px; background-color: #3FE1D1; color: black;">Search</button>
+                    style="border-radius: 0px 20px 20px 0px; background-color: #3FE1D1; color: black;"><i class="bi bi-search"></i></button>
             </form>
+            <a href="#"><i class="bi bi-cart" style="color: #D9D9D9; font-size: 25px; margin-left: 50%;"></i></a>
         </div>
 
 
@@ -65,15 +66,16 @@
         <div class="d-flex justify-content-between" style="width: 80%; margin-top: 20px;">
             <h2>Meu Carrinho</h2>
 
-            <button type="button" class="btn " style="background-color: #3FE1D1; color: black;">Continuar
-                comprando</button>
+            <button type="button" class="btn " style="background-color: #3FE1D1; color: black;"><a
+                    href="item-loja.html">Continuar
+                    comprando</a></button>
         </div>
 
         <!--Itens e forma de pagamento-->
         <div class="d-flex justify-content-between" style="width: 80%; ">
             <div class="d-flex flex-column mb-3 align-items-center" style="width: 65%;">
                 <div class="d-flex justify-content-between align-items-center"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%; height: 50px;">
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%; height: 50px;">
                     <h5 style="padding-top: 5px;">Produto(s): 2</h5>
 
                     <button type="button" class="btn " style="background-color: none; color: red;">
@@ -83,60 +85,172 @@
                 </div>
 
                 <div class="d-flex justify-content-between"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%;">
-                    <div class="d-flex justify-content-between" style="width: 53%"> 
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%;">
+                    <div class="d-flex justify-content-between" style="width: 47%">
                         <div class="camiseta_pokemon"></div>
-                    <h5>Camiseta Pokémon</h5>
-                </div>
-                    <button type="button" class="btn " style="background-color: #3FE1D1; color: black;">Continuar
-                        comprando</button>
+                        <div class="d-flex flex-column">
+                            <h4>Camiseta Pokémon</h4>
+                            <p>Preto, M</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center" style="width: 20%;">
+                        <h5 style="color: #D9D9D9;">R$139,99</h5>
+                        <i class="bi bi-trash3-fill" style="color: #D9D9D9; cursor: pointer;"></i>
+                    </div>
                 </div>
 
                 <div class="d-flex justify-content-between"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%;">
-                    <h2>Meu Carrinho</h2>
-
-                    <button type="button" class="btn " style="background-color: #3FE1D1; color: black;" ;>Continuar
-                        comprando</button>
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%;">
+                    <div class="d-flex justify-content-between" style="width: 56%">
+                        <div class="caneca_starwars"></div>
+                        <div class="d-flex flex-column">
+                            <h4>Caneca Mágica Star Wars</h4>
+                            <p>200ml</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center" style="width: 20%;">
+                        <h5 style="color: #D9D9D9;">R$38,89</h5>
+                        <i class="bi bi-trash3-fill" style="color: #D9D9D9; cursor: pointer;"></i>
+                    </div>
                 </div>
 
                 <div class="d-flex justify-content-start flex-column"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%;">
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%;">
                     <h4>Possui cupom de desconto ou voucher?</h4>
 
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Insira seu cupom ou voucher"
+                            aria-label="Search" style="background-color: #D9D9D9; color: black;">
+                        <button class="btn btn-outline-success" type="submit"
+                            style="background-color: #3FE1D1; color: black;">Aplicar</button>
                     </form>
                 </div>
 
                 <div class="d-flex justify-content-between"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%;">
-                    <h2>Meu Carrinho</h2>
-
-                    <button type="button" class="btn " style="background-color: #3FE1D1; color: black;">Continuar
-                        comprando</button>
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%;">
+                    <div class="d-flex justify-content-between" style="width: 56%">
+                        <div class="d-flex flex-column">
+                            <h4>Frete (Enviado para o CEP 12345-678)</h4>
+                            <h6>Entrega padrão Correios</h6>
+                            <p style="cursor: pointer; text-decoration: underline;">Alterar Endereço - Outras formas de
+                                entrega</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center" style="width: 20%;">
+                        <h5 style="color: #D9D9D9;">R$14,79</h5>
+                    </div>
                 </div>
 
                 <div class="d-flex justify-content-between"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%;">
-                    <h2>Meu Carrinho</h2>
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%;">
+                    <h4>Subtotal</h4>
 
-                    <button type="button" class="btn " style="background-color: #3FE1D1; color: black;">Continuar
-                        comprando</button>
+                    <div class="d-flex justify-content-around align-items-center" style="width: 20%;">
+                        <h4>R$188,67</h4>
+                    </div>
                 </div>
 
+                <div class="d-flex flex-column"
+                    style="width: 100%; margin-top: 1%; background-color: black; padding: 2%;">
+                    <h4>Informações Importantes</h4>
+
+                    <li>
+                        <h6>A confirmação da compra é feita mediante a pagamento;</h6>
+                    </li>
+                    <li>
+                        <h6>Após o recebimento, você tem até 5 dias úteis para solicitar a devolução/troca;</h6>
+                    </li>
+                    <li>
+                        <h6>Fique tranquilo! Seus dados e os dados da sua forma de pagamento são armazenados de forma
+                            segura conosco.</h6>
+                    </li>
+
+                </div>
+            </div>
+            <div class="d-flex flex-column mb-3 align-items-center" style="width: 30%;">
                 <div class="d-flex justify-content-between"
-                    style="width: 100%; margin-top: 1%; background-color: black; padding: 1%;">
-                    <h2>Meu Carrinho</h2>
+                    style="width: 100%; margin-top: 2%; background-color: black; padding: 2%; height: 50px;">
+                    <h5 style="margin-top: 5px;">Formas de pagamento</h5>
+                </div>
 
-                    <button type="button" class="btn " style="background-color: #3FE1D1; color: black;">Continuar
-                        comprando</button>
+                <div class="d-flex justify-content-between flex-column align-items-center"
+                style="width: 100%; height: 150px; margin-top: 2%; background-color: black; padding: 5%;">
+                    <div class="d-flex flex-row align-items-center" style="width: 100%;">
+                        <li style="font-size: 25px;"></li>
+                        <div style="font-size: 14px;">Cartão de crédito à vista</div>
+                    </div>
+                    <div class="d-flex flex-nowrap" style="width: 70%; justify-content: start;">
+                        <img src="../Geekflix/imgcarrinho/next-design-thumbnail.jpg" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/png-transparent-visa-logo-credit-card-debit-card-mastercard-logo-visa-go-blue-text-trademark.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/elo-30.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/mastercard-2019.jpg" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <div style="width: 1em; height: 1em; margin: 1%; text-align: center; border: #fff solid 1px; padding: 0px;"><p style="font-size: 10px;">+1</p></div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-column align-items-center"
+                style="width: 100%; height: 150px; margin-top: 2%; background-color: black; padding: 5%;">
+                    <div style="width: 100%;">
+                        <div class="d-flex flex-row align-items-center" style="width: 100%;">
+                            <li style="font-size: 25px;"></li>
+                            <div style="font-size: 14px;">Cartão de crédito parcelado</div>
+                        </div>
+                        <div class="d-flex justify-content-center" style="width: 100%;">
+                            <div style="font-size: 10px; width: 90%;">Em até 6x sem juros ou de 7x a 12x com juros</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-nowrap" style="width: 70%; justify-content: start;">
+                        <img src="../Geekflix/imgcarrinho/png-transparent-visa-logo-credit-card-debit-card-mastercard-logo-visa-go-blue-text-trademark.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/mastercard-2019.jpg" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/elo-30.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <div style="width: 1em; height: 1em; margin: 1%; text-align: center; border: #fff solid 1px; padding: 0px;"><p style="font-size: 10px;">+1</p></div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-column align-items-center"
+                    style="width: 100%; height: 150px; margin-top: 2%; background-color: black; padding: 5%;">
+                    <div class="d-flex flex-row align-items-center" style="width: 100%;">
+                        <li style="font-size: 25px;"></li>
+                        <div style="font-size: 14px;">Pix</div>
+                    </div>
+                    <div class="d-flex flex-nowrap" style="width: 70%; justify-content: start;">
+                        <img src="../Geekflix/imgcarrinho/pix.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-column align-items-center"
+                style="width: 100%; height: 150px; margin-top: 2%; background-color: black; padding: 5%;">
+                    <div class="d-flex flex-row align-items-center" style="width: 100%;">
+                        <div style="width: 100%;">
+                            <div class="d-flex flex-row align-items-center" style="width: 100%;">
+                                <li style="font-size: 25px;"></li>
+                                <div style="font-size: 14px;">Paypal</div>
+                            </div>
+                            <div class="d-flex justify-content-center" style="width: 100%;">
+                                <div style="font-size: 10px; width: 90%;">Em até 6x sem juros no cartão</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-nowrap" style="width: 70%; justify-content: start;">
+                        <img src="../Geekflix/imgcarrinho/Hipercard_logo.svg.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/mastercard-2019.jpg" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <img src="../Geekflix/imgcarrinho/png-transparent-visa-logo-credit-card-debit-card-mastercard-logo-visa-go-blue-text-trademark.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
+                        <div style="width: 1em; height: 1em; margin: 1%; text-align: center; border: #fff solid 1px; padding: 0px;"><p style="font-size: 10px;">+2</p></div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-column align-items-center"
+                style="width: 100%; height: 150px; margin-top: 2%; background-color: black; padding: 5%;">
+                <div class="d-flex flex-row align-items-center" style="width: 100%;">
+                    <li style="font-size: 25px;"></li>
+                    <div style="font-size: 14px;">Boleto</div>
+                </div>
+                <div class="d-flex flex-nowrap" style="width: 70%; justify-content: start;">
+                    <img src="../Geekflix/imgcarrinho/boleto.png" style="background-color: white; width: 1.9em; height: 1em; margin: 1%; border-radius: 2px;">
                 </div>
             </div>
-            <div class="d-flex flex-column mb-3 align-items-center" style="width: 30%; border: #3FE1D1 solid 1px;">
-            </div>
-
+            <div class="d-flex justify-content-center align-items-center" style="width: 100%; height: 21%; margin-top: 2%;">
+            <button class="btn" style="background-color: #3FE1D1; color: black; width: 70%; height: 30%; font-size: 20px;">Confirmar compra</button>
         </div>
         </div>
 
