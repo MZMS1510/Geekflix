@@ -1,0 +1,7 @@
+.camiseta_pokemon{
+    width: 150px;
+    height: 150px;
+    background-image: url(../imgcarrinho/camiseta-pokemon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
