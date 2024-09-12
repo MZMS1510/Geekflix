@@ -284,21 +284,21 @@
     </main>
 
     <footer class="pt-5">
-        <div class="container-xxl">
+        <div class="container-md">
             <div class="row lh-lg">
                 <div class="col-3 d-none d-md-block">
                     <h4>Conta</h4>
-                    <a href="#" class="nav-link link-body-emphasis">Minha Lista</a>
+                    <a href="./minhalista.html" class="nav-link link-body-emphasis">Minha Lista</a>
                     <a href="#" class="nav-link link-body-emphasis">Meu Perfil</a>
                     <a href="#" class="nav-link link-body-emphasis">Preferências</a>
                     <a href="#" class="nav-link link-body-emphasis">Sair</a>
                 </div>
                 <div class="col-3 d-none d-md-block">
                     <h4>Navegação</h4>
-                    <a href="#" class="nav-link link-body-emphasis">Séries Populares</a>
-                    <a href="#" class="nav-link link-body-emphasis">Animes Populares</a>
-                    <a href="#" class="nav-link link-body-emphasis">Filmes Populares</a>
-                    <a href="#" class="nav-link link-body-emphasis">Loja</a>
+                    <a href="./index.html#series" class="nav-link link-body-emphasis">Séries Populares</a>
+                    <a href="./index.html#animes" class="nav-link link-body-emphasis">Animes Populares</a>
+                    <a href="./index.html#filmes" class="nav-link link-body-emphasis">Filmes Populares</a>
+                    <a href="./Area_Loja.html" class="nav-link link-body-emphasis">Loja</a>
                 </div>
                 <div class="col-6 col-md-3">
                     <h4>Contato</h4>
@@ -329,7 +329,7 @@
 
     <script>
         document.getElementById("search-button").addEventListener("click", function () {
-            var pesquisa = document.getElementById("search-input").value;
+            var pesquisa = document.getElementById("search-input").value.toLowerCase();
             if (pesquisa) {
                 var url;
                 if (pesquisa.includes("senhor dos aneis")) {
